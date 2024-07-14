@@ -19,7 +19,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
           <div className='entry-box'>
             {previousPrompt.map((item, index) => {
               return (
-                <div className='recent-entries' onClick={()=>}>
+                <div className='recent-entries'>
                   <img src={assets.message_icon} alt="" className='icon prompt-icon' />
                   <p className='entry'>{item.slice(0,18)} ..</p>
                 </div>
