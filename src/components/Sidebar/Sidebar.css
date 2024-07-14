@@ -1,0 +1,88 @@
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.icon-plus{
+    width: 25px;
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-right: 80px;
+    background-color: #f0f4f9;
+    height: 100vh;
+}
+.compressed-bar{
+    padding-right: 15px;
+}
+.compressed-bar .prompt-icon{
+    display: none;
+}
+.compressed-bar p{
+    display: none;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.menu-button{
+    margin-bottom: 50px;
+}
+.menu-button:hover{
+    cursor: pointer;
+}
+.new-chat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+    background-color: #e5eaf1;
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+.new-chat:hover{
+    cursor: pointer;
+    background-color:#e5eaf1cb;
+    transition: background-color 0.3s;
+}
+.entry-box{
+    height: 200px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.recent-entries{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+    border-radius: 20px;
+}
+.entry-box::-webkit-scrollbar{
+    display: none;
+}
+.entry{
+    width: 150px;
+}
+.recent-entries:hover{
+    cursor: pointer;
+    background-color: #e5eaf1;
+    transition: background-color 0.3s;
+}
