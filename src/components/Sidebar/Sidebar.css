@@ -14,10 +14,13 @@
     padding-top: 25px;
     padding-right: 80px;
     background-color: #f0f4f9;
-    height: 100vh;
+    position: sticky;
+    transition: all 0.3s ease-in-out;
 }
 .compressed-bar{
     padding-right: 15px;
+    width: 60px;
+    overflow: hidden;
 }
 .compressed-bar .prompt-icon{
     display: none;
@@ -43,10 +46,7 @@
     column-gap: 15px;
     background-color: #e5eaf1;
     border-radius: 30px;
-    padding-left: 8px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px;
     margin-bottom: 25px;
 }
 .new-chat:hover{
@@ -85,4 +85,43 @@
     cursor: pointer;
     background-color: #e5eaf1;
     transition: background-color 0.3s;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding-right: 15px;
+        align-items: center;
+    }
+    
+    .sidebar .new-chat {
+        flex-direction: column;
+        padding: 8px;
+        border-radius: 50%;
+    }
+
+    .new-chat p {
+        display: none;
+    }
+
+    .recent-title {
+        display: none;
+    }
+
+    .entry-box {
+        display: none;
+    }
+
+    .bottom p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar{
+        position: sticky;
+        top: 0;
+        bottom: 0;
+    }
 }
